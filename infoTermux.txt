@@ -1,0 +1,26 @@
+Entrar no ubuntu para rodar o Ollama:
+- proot-distro login ubuntu
+
+Termux:
+- Ollama start
+
+Caso haja erro, tentar re colocar na host
+pkill -f "ollama serve"
+export OLLAMA_HOST=0.0.0.0:11434
+ollama serve
+
+----
+erro ao instalar alguma bliblioteca
+& C:\Users\Yale\AppData\Local\Programs\Python\Python314\python.exe -m pip install
+
+----
+Acesso SSH Win para Termux:
+. pkg install openssh
+. passwd
+. sshd
+. whoami
+
+no Win:
+. ssh -p 8022 seu_usuario@192.168.51.10
+. yes
+Senha: 2007

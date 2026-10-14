@@ -1,0 +1,17 @@
+-------------------------------
+1 prompt - 07/10/2026 - 01:06
+=-=-=-==-==-=-==-=-==-=-=-=-=-=
+def perguntarIA(linhaCompleta):
+  prompt= f"""
+  Com base nessa vaga:
+  '''
+  {linhaCompleta}
+  '''
+  Quero que você me diga qual vaga essa se encaixa, exemplos:
+  Vaga mais voltada para TI, descreva ela e coloque "Vaga -TI-", a vaga é mais para agro, então coloque "Vaga -Agro-" e assim por diante. Não coloque nada alem, so "Vaga -[area]-", so pode colocar uma area
+  """
+  resposta = client.chat(
+    model='qwen2.5:1.5b',
+    messages=[{'role': 'user', 'content': prompt}]
+  )
+-------------------------------
